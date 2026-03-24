@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v10.0": {
       "PROG6221_POE/1.0.0": {
         "dependencies": {
+          "FigletFontArt": "1.0.0",
           "System.Windows.Extensions": "10.0.5"
         },
         "runtime": {
           "PROG6221_POE.dll": {}
+        }
+      },
+      "FigletFontArt/1.0.0": {
+        "runtime": {
+          "lib/net7.0/FigletFontArt.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "System.Windows.Extensions/10.0.5": {
@@ -37,6 +46,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FigletFontArt/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qAN4jURRDdWBmBKy3woATtIXTsCDXQt7iFQK8awHdDy7scuohoRE5P+6HqFf3SZHzs0fuKMjMU87hIMEe95fFg==",
+      "path": "figletfontart/1.0.0",
+      "hashPath": "figletfontart.1.0.0.nupkg.sha512"
     },
     "System.Windows.Extensions/10.0.5": {
       "type": "package",
