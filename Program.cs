@@ -30,6 +30,26 @@ namespace PROG6221_POE
             Greeting welcome = new Greeting();
             welcome.DisplayWelcome(name);
             Console.ReadKey();
+
+            //Part 1 Question 4, chatbot
+            Chatbot myBot = new Chatbot();
+            bool isRunning = true;
+
+            while (isRunning)
+            {
+                Console.Write("\nAsk a question (or type 'exit' to stop): ");
+                string userInput = Console.ReadLine();
+
+                if (userInput.ToLower() == "exit")
+                {
+                    isRunning = false;
+                    Console.WriteLine("Stay safe online! Goodbye.");
+                }
+                else
+                {
+                    myBot.GetResponse(userInput);
+                }
+            }
         }
     }
 }
