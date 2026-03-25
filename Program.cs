@@ -22,6 +22,21 @@ namespace PROG6221_POE
             player.Play();
             Console.WriteLine("Press Enter to stop the music...");
             Console.ReadKey();
+
+            /*public void DisplayWelcome(string userName)
+        {
+            //ASCII art border
+            string logo = FigletFontArt.FiggleFonts.Standard.Render($"Hello, {userName}!");
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(logo);
+            Console.ResetColor();
+
+            //Welcome the user
+            Console.WriteLine("--------------------------------------------------");
+            Console.WriteLine($"Welcome to the application, {userName}!");
+            Console.WriteLine("--------------------------------------------------");
+        }*/
         }
     }
 }
