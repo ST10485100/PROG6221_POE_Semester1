@@ -20,23 +20,16 @@ namespace PROG6221_POE
             string audioPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "POE Part1 Q1.wav");
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(audioPath);
             player.Play();
-            Console.WriteLine("Press Enter to stop the music...");
+            Console.WriteLine("\nPress enter to proceed");
             Console.ReadKey();
 
-            /*public void DisplayWelcome(string userName)
-        {
-            //ASCII art border
-            string logo = FigletFontArt.FiggleFonts.Standard.Render($"Hello, {userName}!");
+            //Part 1 Question 3
+            Console.Write("Please enter your name: ");
+            string name = Console.ReadLine();
 
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(logo);
-            Console.ResetColor();
-
-            //Welcome the user
-            Console.WriteLine("--------------------------------------------------");
-            Console.WriteLine($"Welcome to the application, {userName}!");
-            Console.WriteLine("--------------------------------------------------");
-        }*/
+            Greeting welcome = new Greeting();
+            welcome.DisplayWelcome(name);
+            Console.ReadKey();
         }
     }
 }
