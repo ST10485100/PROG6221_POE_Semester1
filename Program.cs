@@ -26,10 +26,12 @@ namespace PROG6221_POE
             //Part 1 Question 3
             Console.Write("Please enter your name: ");
             string name = Console.ReadLine();
-
+            Console.Clear();
+        
             Greeting welcome = new Greeting();
             welcome.DisplayWelcome(name);
             Console.ReadKey();
+            
 
             //Part 1 Question 4, chatbot
             Chatbot myBot = new Chatbot();

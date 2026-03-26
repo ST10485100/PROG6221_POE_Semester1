@@ -19,6 +19,13 @@ namespace PROG6221_POE
         //This is basically the chatbots search engine, it searches for answers to questions stored.
         public void GetResponse(string userInput)
         {
+            //Part 1 Question 5, handling invalid inputs
+            if (string.IsNullOrWhiteSpace(userInput))
+            {
+                Console.WriteLine("\n[CyberBot]: It looks like you didn't type anything. Please ask me a question!");
+                return; 
+            }
+
             bool found = false;
             string lowerInput = userInput.ToLower();
 
@@ -27,7 +34,7 @@ namespace PROG6221_POE
                 if (lowerInput.Contains(item.Question))
                 {
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.WriteLine("\n[CyberBot]: " + item.Answer);
+                    Console.WriteLine($"\n[CyberBot]: {item.Answer}\n");
                     Console.ResetColor();
                     found = true;
                     break;
@@ -36,6 +43,9 @@ namespace PROG6221_POE
             {
                 Console.WriteLine("\n[CyberBot]: I'm not sure about that. Try asking about another topic within Cybersecurity I'm sure I can answer it!");
             }
+
         }
-}
+        //Part 1 Question 6, Clean up UI
+        
+    }
 }    
